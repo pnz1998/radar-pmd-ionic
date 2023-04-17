@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "http://edify1.tpddns.cn:8006",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

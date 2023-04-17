@@ -1,0 +1,153 @@
+.homepage-card {
+  padding: 40px 25px 17px 24px;
+  background: rgb(244, 245, 249);
+  box-shadow: none;
+}
+
+.title-img {
+  width: 154px;
+  height: 33px;
+}
+
+.subtitle-img {
+  width: 160px;
+  height: 66px;
+}
+
+.main-img {
+  width: 174px;
+  height: 171px;
+}
+
+.warning-title {
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #666666;
+  line-height: 30px;
+}
+
+.warning-content {
+  font-size: 12px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #999999;
+  line-height: 19px;
+}
+
+.homepage-list {
+  margin-left: 9px;
+  margin-right: 9px;
+  box-shadow: none;
+  padding: 29px 12px 0px 12px;
+}
+
+.list {
+  margin-bottom: 43px;
+  .mat-grid-tile {
+    background: #FFFFFF;
+    border: 1px solid #ADDC80;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.list-item-img {
+  width: 30px;
+  height: 30px;
+  margin-top: -40px;
+  margin-left: 16px;
+}
+
+.list-item {
+  text-align: right;
+  margin-top: 38px;
+  margin-right: 16px;
+}
+
+.list-item-number-title a {
+  font-size: 31px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #407EC7;
+  text-decoration: none;
+}
+
+.list-item-title a {
+  font-size: 19px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #407EC7;
+  text-decoration: none;
+}
+
+.list-item-subtitle {
+  font-size: 12px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #888888;
+}
+
+:host::ng-deep {
+  .mat-card-header {
+    display: block;
+  }
+  .mat-card-header-text {
+    margin: 0;
+  }
+  .mat-card-header {
+    justify-content: center;
+  }
+  .mat-card-title-group {
+    align-items: center;
+    justify-content: space-around;
+  }
+  .mat-card-header .mat-card-title {
+    margin-bottom: 9px;
+  }
+  .mat-grid-tile-content {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .title-img {
+    width: 125px;
+    height: 25px;
+  }
+  .subtitle-img {
+    width: 125px;
+    height: 58px;
+  }
+  .main-img {
+    width: 158px;
+    height: 154px;
+  }
+  .list-item-img {
+    width: 25px;
+    height: 25px;
+    margin-top: -40px;
+    margin-left: 14px;
+  }
+  .list-item {
+    text-align: right;
+    margin-top: 38px;
+    margin-right: 16px;
+  }
+  .list-item-number-title a {
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #407EC7;
+    text-decoration: none;
+  }
+
+  .list-item-title a {
+    font-size: 17px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #407EC7;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,36 @@
+.container {
+  height: 100%;
+}
+.nav-list {
+  display: flex;
+  background: #ffffff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.nav-block {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #888888;
+}
+.nav-block-selected {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #6FC622;
+}
+.list-img {
+  width: 23px;
+  height: 23px;
+}
+
+:host::ng-deep {
+  .mat-list-item-content {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,28 @@
+<div class="container">
+  <mat-card class="header">
+    <img (click)="goBack()" class="icon_back" src="../../assets/chevron_left.png" alt="chevron_left">
+    <span>睡眠报告</span>
+  </mat-card>
+  <div class="filter">
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="tabs">
+      <mat-tab label="日"></mat-tab>
+      <mat-tab label="周"></mat-tab>
+      <mat-tab label="月"></mat-tab>
+    </mat-tab-group>
+    <div class="date">2022<img src="../../assets/arrow_down.png" alt="arrow_down"></div>
+  </div>
+  <mat-card class="content">
+    <mat-card-header class="avatar">
+      <img mat-card-avatar class="avatar-img" src="../../assets/iu.png" alt="IU">
+      <mat-card-title class="header-title">李同学</mat-card-title>
+      <mat-card-subtitle class="header-subtitle">男 / 15827254230</mat-card-subtitle>
+      <mat-card-subtitle class="header-subtitle-college">生物医学工程学院</mat-card-subtitle>
+      <div class="button">
+        <button mat-button (click)="onClick()">点击处理</button>
+        <mat-card-subtitle class="header-subtitle-room">A栋201宿舍</mat-card-subtitle>
+        <mat-card-subtitle class="header-subtitle-id">ID：RadarXP0001</mat-card-subtitle>
+      </div>
+    </mat-card-header>
+    <div class="detail"></div>
+  </mat-card>
+</div>

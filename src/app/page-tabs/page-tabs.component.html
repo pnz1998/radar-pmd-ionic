@@ -1,0 +1,39 @@
+<div class="container">
+  <router-outlet></router-outlet>
+  <mat-nav-list class="nav-list">
+    <mat-list-item [disableRipple]="true">
+      <a 
+        mat-list-item 
+        routerLink="homePage"
+        routerLinkActive="active" 
+        (click)="onClickHomePage()"
+      >
+        <div *ngIf="router.url === '/home/homePage'; else homePage" class="nav-block">
+          <img class="list-img" src="../../assets/health_selected.png" alt="health">首页
+        </div>
+        <ng-template #homePage>
+          <div class="nav-block">
+            <img class="list-img" src="../../assets/user.png" alt="user">首页
+          </div>
+        </ng-template>
+      </a>
+    </mat-list-item>
+    <mat-list-item>
+      <a
+        mat-list-item 
+        routerLink="userPage"
+        routerLinkActive="active" 
+        (click)="onClickUserPage()"
+      >
+        <div *ngIf="router.url === '/home/userPage'; else userPage" class="nav-block">
+          <img class="list-img" src="../../assets/user_selected.png" alt="user">我的
+        </div>
+        <ng-template #userPage>
+          <div class="nav-block">
+            <img class="list-img" src="../../assets/user.png" alt="user">我的
+          </div>
+        </ng-template>
+      </a>
+    </mat-list-item>
+  </mat-nav-list>
+</div>

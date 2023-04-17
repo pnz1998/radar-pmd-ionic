@@ -1,0 +1,46 @@
+<div class="container">
+  <mat-card class="header">
+    <img (click)="goBack()" class="icon_back" src="../../assets/chevron_left.png" alt="chevron_left">
+    <span>查寝结果</span>
+  </mat-card>
+  <mat-card class="filter">
+    <div class="filter-button">全部寝室</div>
+    <div class="filter-button">全部状态</div>
+    <div class="filter-button">全部记录</div>
+  </mat-card>
+  <p class="total">查寝时间：2022-12-09 22:22:34  在床68人，不在床23人</p>
+  <mat-card class="table">
+    <table mat-table [dataSource]="dormitoryTable">
+      <ng-container matColumnDef="room">
+        <th mat-header-cell *matHeaderCellDef> 寝室 </th>
+        <td mat-cell *matCellDef="let element"> {{element.room}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> 姓名 </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+      <ng-container matColumnDef="phone">
+        <th mat-header-cell *matHeaderCellDef> 手机号 </th>
+        <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
+      </ng-container>
+      <ng-container matColumnDef="lastState">
+        <th mat-header-cell *matHeaderCellDef> 上次状态 </th>
+        <td mat-cell *matCellDef="let element"> {{element.lastState}} </td>
+      </ng-container>
+      <ng-container matColumnDef="isBed">
+        <th mat-header-cell *matHeaderCellDef> 是否在床 </th>
+        <td mat-cell *matCellDef="let element"> {{element.isBed}} </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="columns"></tr>
+      <tr mat-row *matRowDef="let row; columns: columns;"></tr>
+    </table>
+    <mat-paginator
+      hidePageSize="true"
+      aria-label="Select page"
+      pageSize="10"
+      length="100"
+    >
+  </mat-paginator>
+  </mat-card>
+</div>

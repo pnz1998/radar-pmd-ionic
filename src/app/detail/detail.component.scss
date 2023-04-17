@@ -1,0 +1,141 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+  border-radius: 0;
+  .icon_back {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: 21px;
+  }
+  span {
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #24242A;
+  }
+}
+
+.filter {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #666666;
+  .tabs {
+    height: 100%;
+    flex: 1;
+  }
+  .date {
+    width: 80px;
+    text-align: center;
+    img {
+      width: 12px;
+      height: 7px;
+      margin-left: 7px;
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  box-shadow: none;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  .avatar-img {
+    width: 63px;
+    height: 63px;
+  }
+  .header-title {
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #666666;
+  }
+  .header-subtitle {
+    font-size: 11px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #888888;
+  }
+  .header-subtitle-college {
+    font-size: 11px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #888888;
+  }
+  .button {
+    position: absolute;
+    right: 19px;
+    text-align: right;
+    button {
+      width: 77px;
+      height: 26px;
+      background: #6FC622;
+      border-radius: 2px;
+      font-size: 12px;
+      font-family: Source Han Sans CN;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 26px;
+    }
+    .header-subtitle-room {
+      font-size: 11px;
+      font-family: Source Han Sans CN;
+      font-weight: 400;
+      color: #888888;
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+    .header-subtitle-id {
+      font-size: 11px;
+      font-family: Source Han Sans CN;
+      font-weight: 400;
+      color: #888888;
+    }
+  }
+}
+
+.detail {
+  flex: 1;
+  background: url(../../assets/detail.png);
+  background-size: 100% 100%;
+}
+
+:host::ng-deep {
+  .mat-tab-header {
+    height: 100%;
+    border-bottom: 0;
+  }
+  .mat-tab-labels {
+    height: 100%;
+  }
+  .mat-tab-label-content {
+    font-size: 12px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+  }
+  .mat-tab-label {
+    height: 100%;
+  }
+  .mat-tab-label-active {
+    color: #6FC622;
+  }
+  .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background: #6FC622;
+  }
+}

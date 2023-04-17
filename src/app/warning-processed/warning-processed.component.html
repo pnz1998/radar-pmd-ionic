@@ -1,0 +1,35 @@
+<div class="container">
+  <mat-card class="header">
+    <img (click)="goBack()" class="icon_back" src="../../assets/chevron_left.png" alt="chevron_left">
+    <span>已处理</span>
+  </mat-card>
+  <p class="total">共3条已处理数据</p>
+  <mat-card class="content">
+    <mat-card 
+      *ngFor="let time of times" 
+      class="time-block"
+      routerLink="/detail"
+    >
+      <p class="time">{{ time }}<img src="../../assets/arrow_down.png" alt="arrow_down"></p>
+      <mat-card *ngFor="let item of lists[time]" class="card-item">
+        <mat-card-header class="avatar">
+          <img mat-card-avatar class="avatar-img" src="../../assets/iu.png" alt="IU">
+          <mat-card-title class="header-title">{{ item.name }}</mat-card-title>
+          <mat-card-subtitle class="header-subtitle">{{ item.college }}</mat-card-subtitle>
+          <mat-card-subtitle class="header-subtitle-user">
+            <img src="../../assets/building.png" alt="building">{{ item.room }}
+            <img src="../../assets/phone.png" alt="phone">{{ item.phone }}
+          </mat-card-subtitle>
+          <mat-card-subtitle class="header-subtitle-footer">
+            评分{{ item.score }}分<span>|</span>空床率{{ item.emptyBed }}<span>|</span>体温{{ item.temperature }}
+          </mat-card-subtitle>
+          <mat-card-subtitle class="reason">预警原因：{{ item.reason }}</mat-card-subtitle>
+          <p *ngIf="item.level === 'one'" class="level level-one"><span>一级预警</span></p>
+          <p *ngIf="item.level === 'two'" class="level level-two">二级预警</p>
+          <p *ngIf="item.level === 'three'" class="level level-three">三级预警</p>
+        </mat-card-header>
+      </mat-card>
+    </mat-card>
+  </mat-card>
+</div>
+

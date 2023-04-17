@@ -1,0 +1,27 @@
+.title {
+  font-size: 12px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #999999;
+}
+
+:host::ng-deep {
+  .mat-card {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+  .mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+    padding: 0;
+  }
+  .mat-list-single-selected-option, .mat-list-single-selected-option:hover {
+    background: none;
+    color: #6FC622;
+  }
+  .mat-list-text {
+    font-size: 15px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+  }
+  
+}

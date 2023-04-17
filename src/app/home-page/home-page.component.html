@@ -1,0 +1,67 @@
+<div class="container">
+  <mat-card class="homepage-card">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>
+          <img class="title-img" mat-card-image src="../../assets/school_logo.png" >
+        </mat-card-title>
+        <mat-card-subtitle>
+          <img class="subtitle-img" mat-card-image src="../../assets/homepage_title.png" >
+        </mat-card-subtitle>
+        <img mat-card-image class="main-img" src="../../assets/homepage_student 1.png" >
+      </mat-card-title-group>
+    </mat-card-header>
+  </mat-card>
+  <mat-card class="homepage-list">
+    <div class="list-container">
+      <mat-card-content class="list">
+        <mat-grid-list cols="2" rowHeight="94px" gutterSize="11px">
+          <mat-grid-tile>
+            <img class="list-item-img" src="../../assets/warning.png" alt="warning">
+            <mat-card-header class="list-item">
+              <mat-card-title class="list-item-number-title">
+                <a routerLink="/warning-pending">24</a>
+              </mat-card-title>
+              <mat-card-subtitle class="list-item-subtitle">预警待处理</mat-card-subtitle>
+            </mat-card-header>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <img class="list-item-img" src="../../assets/success-02.png" alt="warning">
+            <mat-card-header class="list-item">
+              <mat-card-title class="list-item-number-title">
+                <a routerLink="/warning-processed">16</a>
+              </mat-card-title>
+              <mat-card-subtitle class="list-item-subtitle">预警已处理</mat-card-subtitle>
+            </mat-card-header>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <img class="list-item-img" src="../../assets/bg-data.png" alt="warning">
+            <mat-card-header class="list-item">
+              <mat-card-title class="list-item-title">
+                <a routerLink="/warning-analysis">数据分析</a>
+              </mat-card-title>
+              <mat-card-subtitle class="list-item-subtitle">预警原因结果分析</mat-card-subtitle>
+            </mat-card-header>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <img class="list-item-img" src="../../assets/search.png" alt="warning">
+            <mat-card-header class="list-item">
+              <mat-card-title class="list-item-title">
+                <a routerLink="/dormitory">一键查寝</a>
+              </mat-card-title>
+              <mat-card-subtitle class="list-item-subtitle">实时查看在床情况</mat-card-subtitle>
+            </mat-card-header>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card-content>
+      <mat-card-content>
+        <mat-card-title class="warning-title">注意:</mat-card-title>
+        <mat-card-subtitle class="warning-content">
+          1.预警表示学生最近睡眠、体温或查寝数据异常<br/>
+          2.数据分析根据处理结果统计，请及时与学生沟通了解详情<br/>
+          3.一键查寝可实时查看学生当前时间的在床情况，数据仅参考，请结合多次数据进行分析
+        </mat-card-subtitle>
+      </mat-card-content>
+    </div>
+  </mat-card>
+</div>

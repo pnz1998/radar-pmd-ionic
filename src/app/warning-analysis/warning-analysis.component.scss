@@ -1,0 +1,68 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0 0 0;
+  box-shadow: none;
+  border-radius: 0;
+  .icon_back {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: 21px;
+  }
+  span {
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #24242A;
+  }
+}
+
+.filter {
+  display: flex;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 16px 0 16px 0;
+  .filter-button {
+    text-align: center;
+    font-size: 12px;
+    font-family: Adobe Heiti Std;
+    font-weight: normal;
+    color: #666666;
+    flex: 1;
+  }
+}
+
+.content {
+  margin-top: 10px;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  background: #ffffff;
+  flex: 1;
+  .pie {
+    background-image: url(../../assets/warning_pie.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 157px;
+  }
+  .graph {
+    background-image: url(../../assets/warning_graph.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 161px;
+  }
+  .ratio {
+    background-image: url(../../assets/warning_ratio.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 305px;
+  }
+}
