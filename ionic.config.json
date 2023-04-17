@@ -1,0 +1,8 @@
+{
+  "name": "radar-pmd-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "01021a16"
+}
