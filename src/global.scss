@@ -24,3 +24,8 @@
 // @import "@ionic/angular/css/text-alignment.css";
 // @import "@ionic/angular/css/text-transformation.css";
 // @import "@ionic/angular/css/flex-utils.css";
+html, body { height: 100%; font-size: 10px;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: rgb(244, 245, 249); overflow: hidden;}
+* {
+  box-sizing: border-box;
+}
